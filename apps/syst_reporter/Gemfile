@@ -2,6 +2,10 @@ source "http://rubygems.org"
 
 gem "foreman"
 gem "logging"
+gem "usagewatch_ext"
+gem "clockwork"
+gem 'daemons'
+gem 'unirest'
 
 group :development, :test do
 end
