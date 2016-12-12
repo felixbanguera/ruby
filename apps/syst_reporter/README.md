@@ -1,13 +1,23 @@
+#SYST_REPORTER
+
 This project is meant to be a reporter from a server to a system manager application, through REST services.
 
-This should be run in each server idependantly.
+Dependencies (if not using the Gemfile):
 
-Setup steps:
+  gem "usagewatch_ext"
+
+  gem "clockwork"
+
+  gem 'daemons'
+
+  gem 'unirest'
+
+
+
+#Setup steps:
 
 within the root folder: "bundle install"
-#todo
 
-Running steps:
+#Running steps:
 
-#todo
-
+within the root folder: bundle exec clockwork lib/runner.rb
