@@ -1,0 +1,5 @@
+server_id: "SERVER_ID"
+server_ip: "SERVER_IP"
+report_url: "http://theurltoreport.com/api/v1/"
+report_user: "USER TO REPORT AS"
+report_user_key: "AUTHENTICATION_KEY_OR_TOKEN"
