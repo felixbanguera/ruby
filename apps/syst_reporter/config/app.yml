@@ -1,6 +1,11 @@
-os: "MACOS"
-server_id: "SERVER_ID"
-server_ip: "SERVER_IP"
-report_url: "http://theurltoreport.com/api/v1/"
-report_user: "USER TO REPORT AS"
-report_user_key: "AUTHENTICATION_KEY_OR_TOKEN"
+---
+os: MACOS
+server_ip: 10.3.8.178
+server_name: TestLocalServer
+report_url: http://10.3.8.178:3000
+user_email: admin@mail.com
+user_pwd: '1234321'
+client_id: d379011c5fc6ce6d8a78d75e7e58d3dba72a837a256712a4d72650f50f22b444
+client_secret: 9d203d753836cae1fa527a12ca88d7be5e83a439305589a37c0e7bbf9f23f613
+server_uid: d1ec91e8-efbb-477d-9545-8bb2649be25a
+user_secret: 9cba258d52cb744f0cb434ee25ce8488eb3cd078df415736d85d814a5a281002

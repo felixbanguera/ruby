@@ -1,6 +1,7 @@
-require "yaml"
+require 'yaml'
 require 'usagewatch_ext'
 require_relative 'connector.rb'
+
 class Reporter
   def initialize(*args)
     puts "Reporter::initialize >> !"
@@ -15,7 +16,9 @@ class Reporter
     begin
       puts "Reporter::report! >> !"
       puts "will connect with @connector: #{@connector}"
-      @connector.send_report(get_data)
+      data = get_data
+      puts "Reporter::report! >> data: #{data}"
+      @connector.update_server(data)
     rescue => error
       puts "Reporter::report! >> ERROR: #{error}"
     end
@@ -32,12 +35,12 @@ class Reporter
 
   def get_mapped_report
     {
-      uw_diskused: @usw.uw_diskused,
-      uw_diskused_perc: @usw.uw_diskused_perc,
-      uw_memused: @usw.uw_memused,
-      uw_cpuused: @usw.uw_cpuused,
-      uw_cputop: @usw.uw_cputop,
-      uw_memtop: @usw.uw_memtop
+      disk_used: @usw.uw_diskused,
+      disk_used_percent: @usw.uw_diskused_perc,
+      memory_used: @usw.uw_memused,
+      cpu_used: @usw.uw_cpuused,
+      cpu_processes: @usw.uw_cputop.to_s,
+      memory_processes: @usw.uw_memtop.to_s
     }
   end
 end
