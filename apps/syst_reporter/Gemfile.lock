@@ -22,8 +22,13 @@ GEM
     logging (2.1.0)
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
+    mime-types (1.25.1)
     minitest (5.10.1)
     multi_json (1.12.1)
+    rdoc (4.3.0)
+    rest-client (1.6.8)
+      mime-types (~> 1.16)
+      rdoc (>= 2.4.2)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -58,6 +63,7 @@ DEPENDENCIES
   flexmock
   foreman
   logging
+  rest-client
   rspec
   rspec-given
   usagewatch_ext

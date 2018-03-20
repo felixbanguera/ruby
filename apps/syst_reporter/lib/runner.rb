@@ -10,8 +10,4 @@ module Clockwork
     reporter = Reporter.new
     reporter.report!
   end
-
-  every(1.minutes, 'send.report.job') do
-    puts "Job to send report"
-  end
 end

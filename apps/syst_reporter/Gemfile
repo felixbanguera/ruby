@@ -5,7 +5,7 @@ gem "logging"
 gem "usagewatch_ext"
 gem "clockwork"
 gem 'daemons'
-gem 'unirest'
+gem 'rest-client'
 
 group :development, :test do
 end
