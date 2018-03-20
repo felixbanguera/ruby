@@ -1,0 +1,17 @@
+source "http://rubygems.org"
+
+gem "foreman"
+gem "logging"
+gem "usagewatch_ext"
+gem "clockwork"
+gem 'daemons'
+gem 'unirest'
+
+group :development, :test do
+end
+
+group :test do
+  gem "rspec"
+  gem "rspec-given"
+  gem "flexmock"
+end

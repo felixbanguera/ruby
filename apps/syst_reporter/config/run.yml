@@ -1,0 +1,5 @@
+report:
+  - "CPU"
+  - "DISK"
+  - "PROCESS"
+interval: 60
